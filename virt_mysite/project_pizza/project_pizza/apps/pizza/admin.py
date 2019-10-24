@@ -3,7 +3,7 @@ from .models import Pizza, Size, Ingredient
 
 
 class PizzaAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'size', 'price', 'status']
+    list_display = ['id', 'name', 'size', 'price', 'available']
     list_display_links = ['name']
     list_editable = ['price']
     list_filter = ['size', 'price']
